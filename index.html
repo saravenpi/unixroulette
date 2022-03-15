@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Unix Roulette</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body onload="init()">
+    <center>
+			<div>
+				<h1 class="title">Unix Roulette</h1>
+			</div>
+		</center>
+		<div class="rouletteContainer">
+			<div class="line">
+			</div>
+			<div id="rouletteElements" class="roulette">
+			</div>
+		</div>
+		<br><br><br><br><br><br><br><br>
+		<center>
+			<div>
+				<button id="startButton" onclick="play()">Roll</button>
+			</div>
+		</center>
+    <br><br>
+    <center>
+      <div id="winners" class="winners"></div>
+    </center>
+    <div id="confetti-wrapper"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
