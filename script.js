@@ -206,6 +206,8 @@ function rand(min, max) {
 var width = 80
 
 function play() {
+  document.getElementById('chosen').innerHTML = ''
+  document.getElementById('confetti-wrapper').innerHTML = ''
   var offset = rand(0, amountOfBoxes * 140 - 180) + 180
   document.getElementById('rouletteElements').style.left =
     -(offset - 180) + 'px'
@@ -219,7 +221,7 @@ function play() {
   chosenDistro.innerHTML = `<a href="${distro[2]}"><img src="${distro[1]}"/><br/>${distro[0]}</a>`
 
   setTimeout(function () {
-    document.getElementById('winners').appendChild(chosenDistro)
+    document.getElementById('chosen').appendChild(chosenDistro)
     document.getElementById('rouletteElements').style.transitionDuration = '0s'
 
     setTimeout(function () {

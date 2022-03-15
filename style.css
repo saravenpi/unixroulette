@@ -20,7 +20,7 @@ button {
     font-size: 48px;
 }
 
-.winners > div {
+.chosen > div {
     float: left;
     min-width: 10%;
     list-style: none;
@@ -31,7 +31,7 @@ button {
     font-size: 30px;
 }
 
-.winners{
+.chosen {
     position: absolute;
     left: 10%;
     right: 10%;
