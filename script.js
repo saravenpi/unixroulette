@@ -11,184 +11,83 @@ var colors = [
   '#89DCEB',
 ]
 var distroList = [
-  [
-    'Pop!_OS',
-    'assets/popos.png',
-    'https://pop.system76.com/',
-  ],
-  [
-    'Kali Linux',
-    'assets/kali.png',
-    'https://www.kali.org/',
-  ],
-  [
-    'Arch Linux',
-    'assets/arch.png',
-    'https://archlinux.org/',
-  ],
-  [
-    'Raspberry Pi OS',
-    'assets/raspios.png',
-    'https://www.raspberrypi.com/software/',
-  ],
-  [
-    'Debian',
-    'assets/debian.png',
-    'https://www.debian.org/',
-  ],
-  [
-    'Fedora',
-    'assets/fedora.png',
-    'https://getfedora.org/',
-  ],
-  [
-    'Manjaro',
-    'assets/manjaro.png',
-    'https://manjaro.org/',
-  ],
-  [
-    'Linux Mint',
-    'assets/mint.png',
-    'https://linuxmint.com/',
-  ],
-  [
-    'Ubuntu',
-    'assets/ubuntu.png',
-    'https://ubuntu.com/download',
-  ],
-  [
-    'Zorin OS',
-    'assets/zorin.png',
-    'https://zorin.com/os/',
-  ],
-  [
-    'Gentoo',
-    'assets/gentoo.png',
-    'https://www.gentoo.org/',
-  ],
-  [
-    'Elementary OS',
-    'assets/elementary.png',
-    'https://elementary.io/',
-  ],
-  [
-    'openSUSE',
-    'assets/opensuse.png',
-    'https://www.opensuse.org/',
-  ],
-  [
-    'KISS Linux',
-    'assets/kiss.png',
-    'https://kisslinux.org/',
-  ],
-  [
-    'Void Linux',
-    'assets/void.png',
-    'https://voidlinux.org/',
-  ],
-  [
-    'Artix Linux',
-    'assets/artix.png',
-    'https://artixlinux.org/',
-  ],
-  [
-    'EndeavourOS',
-    'assets/endeavour.png',
-    'https://endeavouros.com/',
-  ],
-  [
-    'OpenBSD',
-    'assets/openbsd.png',
-    'http://www.openbsd.org/',
-  ],
-  [
-    'FreeBSD',
-    'assets/freebsd.png',
-    'https://www.freebsd.org/',
-  ],
-  [
-    'Puppy Linux',
-    'assets/puppy.png',
-    'https://puppylinux.com/',
-  ],
-  [
-    'SteamOS',
-    'assets/steamos.png',
-    'https://store.steampowered.com/steamos/',
-  ],
-  [
-    'Garuda Linux',
-    'assets/garuda.png',
-    'https://garudalinux.org/',
-  ],
-  [
-    'Parrot OS',
-    'assets/parrot.png',
-    'https://parrotsec.org/',
-  ],
-  [
-    'Deepin',
-    'assets/deepin.png',
-    'https://www.deepin.org/en/',
-  ],
-  [
-    'NixOS',
-    'assets/nixos.png',
-    'https://nixos.org/',
-  ],
-  [
-    'CentOS',
-    'assets/centos.png',
-    'https://www.centos.org/',
-  ],
-  [
-    'Lubuntu',
-    'assets/lubuntu.png',
-    'https://lubuntu.me/',
-  ],
-  [
-    'Kubuntu',
-    'assets/kubuntu.png',
-    'https://kubuntu.org/',
-  ],
-  [
-    'ArcoLinux',
-    'assets/arco.png',
-    'https://arcolinux.com/',
-  ],
-  [
-    'Peppermint OS',
-    'assets/peppermint.png',
-    'https://peppermintos.com/',
-  ],
-  [
-    'KDE neon',
-    'assets/kdeneon.png',
-    'https://neon.kde.org/',
-  ],
-  [
-    'Tails',
-    'assets/tails.png',
-    'https://tails.boum.org/',
-  ],
-  [
-    'Qubes OS',
-    'assets/qubes.png',
-    'https://www.qubes-os.org/',
-  ],
-  [
-    'Clear Linux',
-    'assets/clear.png',
-    'https://clearlinux.org/',
-  ],
+  ['Pop!_OS', 'assets/popos.png', 'https://pop.system76.com/'],
+  ['Kali Linux', 'assets/kali.png', 'https://www.kali.org/'],
+  ['Arch Linux', 'assets/arch.png', 'https://archlinux.org/'],
+  ['Raspberry Pi OS','assets/raspios.png','https://www.raspberrypi.com/software/'],
+  ['Debian', 'assets/debian.png', 'https://www.debian.org/'],
+  ['Fedora', 'assets/fedora.png', 'https://getfedora.org/'],
+  ['Manjaro', 'assets/manjaro.png', 'https://manjaro.org/'],
+  ['Linux Mint', 'assets/mint.png', 'https://linuxmint.com/'],
+  ['Ubuntu', 'assets/ubuntu.png', 'https://ubuntu.com/download'],
+  ['Zorin OS', 'assets/zorin.png', 'https://zorin.com/os/'],
+  ['Gentoo', 'assets/gentoo.png', 'https://www.gentoo.org/'],
+  ['Elementary OS', 'assets/elementary.png', 'https://elementary.io/'],
+  ['openSUSE', 'assets/opensuse.png', 'https://www.opensuse.org/'],
+  ['KISS Linux', 'assets/kiss.png', 'https://kisslinux.org/'],
+  ['Void Linux', 'assets/void.png', 'https://voidlinux.org/'],
+  ['Artix Linux', 'assets/artix.png', 'https://artixlinux.org/'],
+  ['EndeavourOS', 'assets/endeavour.png', 'https://endeavouros.com/'],
+  ['OpenBSD', 'assets/openbsd.png', 'http://www.openbsd.org/'],
+  ['FreeBSD', 'assets/freebsd.png', 'https://www.freebsd.org/'],
+  ['Puppy Linux', 'assets/puppy.png', 'https://puppylinux.com/'],
+  ['SteamOS', 'assets/steamos.png', 'https://store.steampowered.com/steamos/'],
+  ['Garuda Linux', 'assets/garuda.png', 'https://garudalinux.org/'],
+  ['Parrot OS', 'assets/parrot.png', 'https://parrotsec.org/'],
+  ['Deepin', 'assets/deepin.png', 'https://www.deepin.org/en/'],
+  ['NixOS', 'assets/nixos.png', 'https://nixos.org/'],
+  ['CentOS', 'assets/centos.png', 'https://www.centos.org/'],
+  ['Lubuntu', 'assets/lubuntu.png', 'https://lubuntu.me/'],
+  ['Kubuntu', 'assets/kubuntu.png', 'https://kubuntu.org/'],
+  ['ArcoLinux', 'assets/arco.png', 'https://arcolinux.com/'],
+  ['Peppermint OS', 'assets/peppermint.png', 'https://peppermintos.com/'],
+  ['KDE neon', 'assets/kdeneon.png', 'https://neon.kde.org/'],
+  ['Tails', 'assets/tails.png', 'https://tails.boum.org/'],
+  ['Qubes OS', 'assets/qubes.png', 'https://www.qubes-os.org/'],
+  ['Clear Linux', 'assets/clear.png', 'https://clearlinux.org/'],
+  ['Xubuntu', 'assets/xubuntu.png', 'http://www.xubuntu.org/'],
+  ['Ubuntu Mate', 'assets/ubuntumate.png', 'https://ubuntu-mate.org/'],
+  ['Ubuntu Gnome', 'assets/ubuntugnome.png', 'http://ubuntugnome.org/'],
+  ['Ubuntu Budgie', 'assets/ubuntubudgie.png', 'https://ubuntubudgie.org/'],
+  ['Alpine', 'assets/alpine.png', 'https://www.alpinelinux.org/'],
+  ['Linux Lite', 'assets/lite.png', 'https://www.linuxliteos.com/'],
+  ['Reborn Os', 'assets/rebornos.png', 'https://rebornos.org/'],
+  ['Hyperbola', 'assets/hyperbola.png', 'https://www.hyperbola.info/'],
+  ['Otakux', 'assets/otakux.png', 'https://archiveos.org/otakux/'],
+  ['Minix', 'assets/minix.png', 'http://www.minix3.org/'],
+  ['Slackware', 'assets/slackware.png', 'http://www.slackware.com/'],
+  ['InstantOs', 'assets/light.svg', 'https://instantos.io/'],
+  ['AmogOs', 'assets/amogos.png', 'https://amogos.studio/'],
+  ['Ubuntu Server', 'assets/ubuntu.png', 'https://ubuntu.com/download/server'],
+  ['CutefishOs', 'assets/cutefish.svg', 'https://en.cutefishos.com/'],
 ]
 
 var amountOfBoxes = 200
 
+function shuffle(array) {
+  let currentIndex = array.length,
+    randomIndex
+
+  // While there remain elements to shuffle...
+  while (currentIndex != 0) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex--
+
+    // And swap it with the current element.
+    ;[array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ]
+  }
+
+  return array
+}
+
 function init() {
+  shuffle(distroList)
   let roulette = document.getElementById('rouletteElements')
   roulette.innerHTML = ''
-
   for (var i = 0; i < amountOfBoxes; i++) {
     var node = document.createElement('div')
     var h3 = document.createElement('h3')
